@@ -1,22 +1,20 @@
-import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
-import { getToken } from "next-auth/jwt";
-import { authSecret } from "@/lib/auth-secret";
+import NextAuth, {
+  type NextAuthRequest,
+  type NextAuthResult,
+} from "next-auth";
+import {
+  NextResponse,
+  type NextFetchEvent,
+  type NextMiddleware,
+} from "next/server";
+import authConfig from "@/auth.config";
 
-export default async function middleware(req: NextRequest) {
-  const token = await getToken({
-    req,
-    secret: authSecret,
-  });
+const authResult: NextAuthResult = NextAuth(authConfig);
+const middleware: NextMiddleware = authResult.auth(
+  (_request: NextAuthRequest, _event: NextFetchEvent) => NextResponse.next()
+);
 
-  if (!token) {
-    const loginUrl = new URL("/login", req.url);
-    loginUrl.searchParams.set("callbackUrl", req.nextUrl.pathname);
-    return NextResponse.redirect(loginUrl);
-  }
-
-  return NextResponse.next();
-}
+export default middleware;
 
 export const config = {
   matcher: [
