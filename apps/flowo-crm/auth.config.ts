@@ -5,6 +5,7 @@ const PROTECTED_PATHS = ["/dashboard", "/pipeline", "/clients", "/tasks"];
 
 const authConfig: NextAuthConfig = {
   secret: authSecret,
+  trustHost: true,
   providers: [],
   pages: {
     signIn: "/login",
