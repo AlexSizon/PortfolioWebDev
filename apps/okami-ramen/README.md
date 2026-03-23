@@ -34,7 +34,8 @@ DATABASE_URL="file:/data/okami.db"
 
 - Railway build command: `pnpm build --filter=okami-ramen`
 - Railway persistent volume mount: `/data`
-- Railway start command: `node apps/okami-ramen/.next/standalone/apps/okami-ramen/server.js`
+- Railway start command: `HOSTNAME=0.0.0.0 node apps/okami-ramen/.next/standalone/apps/okami-ramen/server.js`
+- Force `HOSTNAME=0.0.0.0` for standalone mode so Next.js does not try to bind to the container hostname, which can cause Railway healthchecks to fail even after a successful build.
 
 ## Nightly Reset Cron
 
