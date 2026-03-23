@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { requireAuth } from "@/lib/api-helpers";
 
+type RevenueDeal = {
+  value: number;
+};
+
 export async function GET(_req: NextRequest) {
   const authError = await requireAuth();
   if (authError) return authError;
@@ -15,14 +19,17 @@ export async function GET(_req: NextRequest) {
     const start = new Date(d.getFullYear(), d.getMonth(), 1);
     const end = new Date(d.getFullYear(), d.getMonth() + 1, 0, 23, 59, 59);
 
-    const deals = await prisma.deal.findMany({
+    const deals: RevenueDeal[] = await prisma.deal.findMany({
+      select: {
+        value: true,
+      },
       where: {
         stage: "Won",
         createdAt: { gte: start, lte: end },
       },
     });
 
-    const total = deals.reduce((sum: number, deal) => sum + deal.value, 0);
+    const total = deals.reduce((sum, deal) => sum + deal.value, 0);
     months.push({
       month: start.toLocaleString("en-US", { month: "short" }),
       revenue: Math.round(total),
