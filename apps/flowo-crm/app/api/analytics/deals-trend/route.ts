@@ -8,7 +8,7 @@ export async function GET(_req: NextRequest) {
 
   // Last 3 months of new deal counts
   const now = new Date();
-  const months = [];
+  const months: Array<{ month: string; deals: number }> = [];
 
   for (let i = 2; i >= 0; i--) {
     const d = new Date(now.getFullYear(), now.getMonth() - i, 1);

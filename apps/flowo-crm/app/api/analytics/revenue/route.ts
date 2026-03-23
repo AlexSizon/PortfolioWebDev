@@ -8,7 +8,7 @@ export async function GET(_req: NextRequest) {
 
   // Last 3 months of Won deal values
   const now = new Date();
-  const months = [];
+  const months: Array<{ month: string; revenue: number }> = [];
 
   for (let i = 2; i >= 0; i--) {
     const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
@@ -22,7 +22,7 @@ export async function GET(_req: NextRequest) {
       },
     });
 
-    const total = deals.reduce((sum, d) => sum + d.value, 0);
+    const total = deals.reduce((sum: number, deal) => sum + deal.value, 0);
     months.push({
       month: start.toLocaleString("en-US", { month: "short" }),
       revenue: Math.round(total),
