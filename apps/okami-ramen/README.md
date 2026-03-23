@@ -36,6 +36,7 @@ DATABASE_URL="file:/data/okami.db"
 - Railway persistent volume mount: `/data`
 - Railway start command: `HOSTNAME=0.0.0.0 node apps/okami-ramen/.next/standalone/apps/okami-ramen/server.js`
 - Force `HOSTNAME=0.0.0.0` for standalone mode so Next.js does not try to bind to the container hostname, which can cause Railway healthchecks to fail even after a successful build.
+- The build step also copies `.next/static` into the standalone output so Railway can serve the generated CSS, JS, and font files.
 
 ## Nightly Reset Cron
 
