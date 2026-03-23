@@ -1,0 +1,57 @@
+---
+---
+
+<nav
+  id="gallery-nav"
+  class="gallery-nav fixed inset-x-0 top-0 z-50 flex items-start justify-between px-5 pt-5 md:px-8 md:pt-7"
+  data-theme="light"
+  data-wordmark-hidden="false"
+  aria-label="Gallery navigation"
+>
+  <a
+    href="/"
+    class="gallery-nav__wordmark pointer-events-auto font-display text-[1.35rem] font-light italic tracking-[0.32em] transition-colors duration-300 md:text-[1.75rem]"
+    data-cursor="accent"
+  >
+    MAISON NORD
+  </a>
+
+  <div class="pointer-events-auto flex items-center gap-2 md:hidden">
+    <button
+      id="nav-prev"
+      type="button"
+      aria-label="Previous slide"
+      class="gallery-nav__button flex h-10 w-10 items-center justify-center rounded-full transition-all duration-200 disabled:cursor-default"
+      data-cursor="accent"
+      disabled
+    >
+      <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path
+          d="M8 12V4M4.5 7.5L8 4l3.5 3.5"
+          stroke="currentColor"
+          stroke-width="1.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <button
+      id="nav-next"
+      type="button"
+      aria-label="Next slide"
+      class="gallery-nav__button flex h-10 w-10 items-center justify-center rounded-full transition-all duration-200 disabled:cursor-default"
+      data-cursor="accent"
+    >
+      <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path
+          d="M8 4v8m-3.5-3.5L8 12l3.5-3.5"
+          stroke="currentColor"
+          stroke-width="1.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+  </div>
+</nav>

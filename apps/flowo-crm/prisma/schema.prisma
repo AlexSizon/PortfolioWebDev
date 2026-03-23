@@ -1,0 +1,71 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  password      String
+  name          String?
+  role          String    @default("user")
+  createdAt     DateTime  @default(now())
+}
+
+model Client {
+  id        String     @id @default(cuid())
+  name      String
+  company   String
+  email     String
+  phone     String?
+  tags      String     @default("[]") // JSON array stored as string
+  notes     String?
+  createdAt DateTime   @default(now())
+
+  deals      Deal[]
+  tasks      Task[]
+  activities Activity[]
+}
+
+model Deal {
+  id        String   @id @default(cuid())
+  title     String
+  value     Float
+  stage     String   @default("Leads")
+  priority  String   @default("Medium")
+  clientId  String
+  createdAt DateTime @default(now())
+
+  client Client @relation(fields: [clientId], references: [id], onDelete: Cascade)
+}
+
+model Task {
+  id        String    @id @default(cuid())
+  title     String
+  dueDate   DateTime?
+  priority  String    @default("Medium")
+  done      Boolean   @default(false)
+  clientId  String?
+  dealId    String?
+  createdAt DateTime  @default(now())
+
+  client Client? @relation(fields: [clientId], references: [id], onDelete: SetNull)
+}
+
+model Activity {
+  id          String   @id @default(cuid())
+  type        String   // "note", "call", "email", "meeting", "deal_updated"
+  description String
+  clientId    String
+  createdAt   DateTime @default(now())
+
+  client Client @relation(fields: [clientId], references: [id], onDelete: Cascade)
+}

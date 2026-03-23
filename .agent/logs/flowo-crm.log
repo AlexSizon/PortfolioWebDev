@@ -1,0 +1,327 @@
+
+> flowo-crm@0.1.0 dev D:\MyProjects\WebPortfolio\apps\flowo-crm
+> next dev --turbopack --port 3002
+
+▲ Next.js 16.2.1 (Turbopack)
+- Local:         http://localhost:3002
+- Network:       http://26.189.16.216:3002
+- Environments: .env
+✓ Ready in 443ms
+Creating turbopack project {
+  dir: 'D:\\MyProjects\\WebPortfolio\\apps\\flowo-crm',
+  testMode: true
+}
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+
+ GET / 307 in 1635ms (next.js: 1426ms, application-code: 210ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 344ms (next.js: 287ms, application-code: 56ms)
+ GET / 307 in 54ms (next.js: 4ms, application-code: 51ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 48ms (next.js: 4ms, application-code: 44ms)
+ GET / 307 in 52ms (next.js: 4ms, application-code: 48ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 49ms (next.js: 3ms, application-code: 46ms)
+ GET / 307 in 40ms (next.js: 1393µs, application-code: 39ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 40ms (next.js: 3ms, application-code: 38ms)
+ GET / 307 in 62ms (next.js: 3ms, application-code: 59ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 67ms (next.js: 8ms, application-code: 60ms)
+ GET / 307 in 47ms (next.js: 3ms, application-code: 44ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 40ms (next.js: 3ms, application-code: 37ms)
+ GET / 307 in 50ms (next.js: 2ms, application-code: 48ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 46ms (next.js: 3ms, application-code: 43ms)
+ GET / 307 in 41ms (next.js: 2ms, application-code: 38ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 37ms (next.js: 3ms, application-code: 34ms)
+ GET / 307 in 33ms (next.js: 1427µs, application-code: 32ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 40ms (next.js: 3ms, application-code: 36ms)
+ GET / 307 in 41ms (next.js: 1336µs, application-code: 40ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 38ms (next.js: 2ms, application-code: 36ms)
+ GET / 307 in 23ms (next.js: 1270µs, application-code: 22ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 39ms (next.js: 1276µs, application-code: 38ms)
+ GET / 307 in 54ms (next.js: 3ms, application-code: 51ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 37ms (next.js: 2ms, application-code: 35ms)
+ GET / 307 in 51ms (next.js: 2ms, application-code: 49ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 32ms (next.js: 3ms, application-code: 30ms)
+ GET / 307 in 63ms (next.js: 2ms, application-code: 61ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 41ms (next.js: 3ms, application-code: 39ms)
+ GET / 307 in 53ms (next.js: 4ms, application-code: 49ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 42ms (next.js: 3ms, application-code: 40ms)
+ GET / 307 in 44ms (next.js: 2ms, application-code: 42ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 26ms (next.js: 1515µs, application-code: 25ms)
+ GET / 307 in 47ms (next.js: 3ms, application-code: 45ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 36ms (next.js: 2ms, application-code: 33ms)
+ GET / 307 in 59ms (next.js: 5ms, application-code: 55ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 42ms (next.js: 3ms, application-code: 39ms)
+ GET / 307 in 56ms (next.js: 3ms, application-code: 53ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 37ms (next.js: 3ms, application-code: 35ms)
+ GET / 307 in 41ms (next.js: 2ms, application-code: 39ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 43ms (next.js: 3ms, application-code: 41ms)
+ GET / 307 in 26ms (next.js: 2ms, application-code: 23ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 38ms (next.js: 1299µs, application-code: 37ms)
+ GET / 307 in 34ms (next.js: 1863µs, application-code: 32ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 43ms (next.js: 2ms, application-code: 41ms)
+ GET / 307 in 46ms (next.js: 3ms, application-code: 44ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 45ms (next.js: 3ms, application-code: 41ms)
+ GET /login 200 in 45ms (next.js: 3ms, application-code: 43ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 36ms (next.js: 2ms, application-code: 33ms)
+ GET / 307 in 42ms (next.js: 3ms, application-code: 39ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 40ms (next.js: 2ms, application-code: 37ms)
+ GET / 307 in 62ms (next.js: 5ms, application-code: 57ms)
+ GET /login?callbackUrl=%2Fdashboard 200 in 45ms (next.js: 3ms, application-code: 42ms)
+ GET /api/auth/providers 200 in 195ms (next.js: 163ms, application-code: 32ms)
+[31m[auth][error][0m JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror
+[31m[auth][cause][0m: Error: no matching decryption secret
+    at clockTolerance (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:915:15)
+    at async flattenedDecrypt (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0ehm_jose_dist_webapi_13pfucm._.js:3333:15)
+    at async compactDecrypt (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0ehm_jose_dist_webapi_13pfucm._.js:3427:23)
+    at async jwtDecrypt (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0ehm_jose_dist_webapi_13pfucm._.js:3461:23)
+    at async Object.decode (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:905:25)
+    at async Module.session (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:4546:29)
+    at async AuthInternal (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:5131:24)
+    at async Auth (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:5370:34)
+    at async AppRouteRouteModule.do (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:5:40732)
+    at async AppRouteRouteModule.handle (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:5:47861)
+    at async responseGenerator (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18289:38)
+    at async AppRouteRouteModule.handleResponse (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:1:227216)
+    at async handleResponse (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18352:32)
+    at async Module.handler (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18406:13)
+    at async DevServer.renderToResponseWithComponentsImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1454:9)
+    at async DevServer.renderPageComponent (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1506:24)
+    at async DevServer.renderToResponseImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1556:32)
+    at async DevServer.pipeImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1043:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\next-server.js:338:17)
+    at async DevServer.handleRequestImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:934:17)
+    at async D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\dev\next-dev-server.js:394:20
+    at async Span.traceAsyncFn (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\trace\trace.js:164:20)
+    at async DevServer.handleRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\dev\next-dev-server.js:390:24)
+    at async invokeRender (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:253:21)
+    at async handleRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:452:24)
+    at async requestHandlerImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:501:13)
+    at async Server.requestListener (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\start-server.js:225:13)
+[31m[auth][details][0m: {}
+ GET /api/auth/session 200 in 1172ms (next.js: 1132ms, application-code: 40ms)
+ GET /api/auth/csrf 200 in 19ms (next.js: 12ms, application-code: 8ms)
+ GET /api/auth/session 200 in 9ms (next.js: 4ms, application-code: 5ms)
+prisma:error 
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Error querying the database: Error code 14: Unable to open the database file
+[31m[auth][error][0m CallbackRouteError: Read more at https://errors.authjs.dev#callbackrouteerror
+[31m[auth][cause][0m: PrismaClientInitializationError: 
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Error querying the database: Error code 14: Unable to open the database file
+    at ei.handleRequestError (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7351:39)
+    at ei.handleAndLogRequestError (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7302:18)
+    at ei.request (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7283:18)
+    at async a (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7950:25)
+    at async Object.authorize (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:8406:30)
+    at async Module.callback (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:4307:39)
+    at async AuthInternal (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:5148:24)
+    at async Auth (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:5370:34)
+    at async AppRouteRouteModule.do (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:5:40732)
+    at async AppRouteRouteModule.handle (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:5:47861)
+    at async responseGenerator (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18289:38)
+    at async AppRouteRouteModule.handleResponse (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:1:227216)
+    at async handleResponse (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18352:32)
+    at async Module.handler (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18406:13)
+    at async DevServer.renderToResponseWithComponentsImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1454:9)
+    at async DevServer.renderPageComponent (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1506:24)
+    at async DevServer.renderToResponseImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1556:32)
+    at async DevServer.pipeImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1043:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\next-server.js:338:17)
+    at async DevServer.handleRequestImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:934:17)
+    at async D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\dev\next-dev-server.js:394:20
+    at async Span.traceAsyncFn (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\trace\trace.js:164:20)
+    at async DevServer.handleRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\dev\next-dev-server.js:390:24)
+    at async invokeRender (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:253:21)
+    at async handleRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:452:24)
+    at async requestHandlerImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:501:13)
+    at async Server.requestListener (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\start-server.js:225:13)
+[31m[auth][details][0m: {
+  "provider": "credentials"
+}
+ POST /api/auth/callback/credentials? 200 in 31ms (next.js: 2ms, application-code: 29ms)
+ GET /api/auth/session 200 in 7ms (next.js: 1908µs, application-code: 5ms)
+ GET /api/auth/providers 200 in 17ms (next.js: 12ms, application-code: 5ms)
+ GET /api/auth/csrf 200 in 6ms (next.js: 1857µs, application-code: 4ms)
+prisma:error 
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Error querying the database: Error code 14: Unable to open the database file
+[31m[auth][error][0m CallbackRouteError: Read more at https://errors.authjs.dev#callbackrouteerror
+[31m[auth][cause][0m: PrismaClientInitializationError: 
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Error querying the database: Error code 14: Unable to open the database file
+    at ei.handleRequestError (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7351:39)
+    at ei.handleAndLogRequestError (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7302:18)
+    at ei.request (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7283:18)
+    at async a (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7950:25)
+    at async Object.authorize (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:8406:30)
+    at async Module.callback (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:4307:39)
+    at async AuthInternal (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:5148:24)
+    at async Auth (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:5370:34)
+    at async AppRouteRouteModule.do (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:5:40732)
+    at async AppRouteRouteModule.handle (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:5:47861)
+    at async responseGenerator (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18289:38)
+    at async AppRouteRouteModule.handleResponse (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:1:227216)
+    at async handleResponse (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18352:32)
+    at async Module.handler (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18406:13)
+    at async DevServer.renderToResponseWithComponentsImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1454:9)
+    at async DevServer.renderPageComponent (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1506:24)
+    at async DevServer.renderToResponseImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1556:32)
+    at async DevServer.pipeImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1043:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\next-server.js:338:17)
+    at async DevServer.handleRequestImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:934:17)
+    at async D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\dev\next-dev-server.js:394:20
+    at async Span.traceAsyncFn (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\trace\trace.js:164:20)
+    at async DevServer.handleRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\dev\next-dev-server.js:390:24)
+    at async invokeRender (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:253:21)
+    at async handleRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:452:24)
+    at async requestHandlerImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:501:13)
+    at async Server.requestListener (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\start-server.js:225:13)
+[31m[auth][details][0m: {
+  "provider": "credentials"
+}
+ POST /api/auth/callback/credentials? 200 in 10ms (next.js: 1675µs, application-code: 9ms)
+ GET /api/auth/session 200 in 6ms (next.js: 1765µs, application-code: 4ms)
+ GET /api/auth/providers 200 in 6ms (next.js: 1922µs, application-code: 4ms)
+ GET /api/auth/csrf 200 in 6ms (next.js: 1798µs, application-code: 4ms)
+prisma:error 
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Error querying the database: Error code 14: Unable to open the database file
+[31m[auth][error][0m CallbackRouteError: Read more at https://errors.authjs.dev#callbackrouteerror
+[31m[auth][cause][0m: PrismaClientInitializationError: 
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Error querying the database: Error code 14: Unable to open the database file
+    at ei.handleRequestError (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7351:39)
+    at ei.handleAndLogRequestError (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7302:18)
+    at ei.request (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7283:18)
+    at async a (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7950:25)
+    at async Object.authorize (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:8406:30)
+    at async Module.callback (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:4307:39)
+    at async AuthInternal (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:5148:24)
+    at async Auth (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:5370:34)
+    at async AppRouteRouteModule.do (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:5:40732)
+    at async AppRouteRouteModule.handle (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:5:47861)
+    at async responseGenerator (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18289:38)
+    at async AppRouteRouteModule.handleResponse (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:1:227216)
+    at async handleResponse (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18352:32)
+    at async Module.handler (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18406:13)
+    at async DevServer.renderToResponseWithComponentsImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1454:9)
+    at async DevServer.renderPageComponent (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1506:24)
+    at async DevServer.renderToResponseImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1556:32)
+    at async DevServer.pipeImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1043:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\next-server.js:338:17)
+    at async DevServer.handleRequestImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:934:17)
+    at async D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\dev\next-dev-server.js:394:20
+    at async Span.traceAsyncFn (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\trace\trace.js:164:20)
+    at async DevServer.handleRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\dev\next-dev-server.js:390:24)
+    at async invokeRender (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:253:21)
+    at async handleRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:452:24)
+    at async requestHandlerImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:501:13)
+    at async Server.requestListener (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\start-server.js:225:13)
+[31m[auth][details][0m: {
+  "provider": "credentials"
+}
+ POST /api/auth/callback/credentials? 200 in 18ms (next.js: 9ms, application-code: 9ms)
+ GET /api/auth/session 200 in 6ms (next.js: 1786µs, application-code: 4ms)
+ GET /api/auth/providers 200 in 16ms (next.js: 11ms, application-code: 5ms)
+ GET /api/auth/csrf 200 in 6ms (next.js: 2ms, application-code: 4ms)
+prisma:error 
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Error querying the database: Error code 14: Unable to open the database file
+[31m[auth][error][0m CallbackRouteError: Read more at https://errors.authjs.dev#callbackrouteerror
+[31m[auth][cause][0m: PrismaClientInitializationError: 
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Error querying the database: Error code 14: Unable to open the database file
+    at ei.handleRequestError (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7351:39)
+    at ei.handleAndLogRequestError (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7302:18)
+    at ei.request (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7283:18)
+    at async a (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7950:25)
+    at async Object.authorize (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:8406:30)
+    at async Module.callback (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:4307:39)
+    at async AuthInternal (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:5148:24)
+    at async Auth (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:5370:34)
+    at async AppRouteRouteModule.do (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:5:40732)
+    at async AppRouteRouteModule.handle (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:5:47861)
+    at async responseGenerator (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18289:38)
+    at async AppRouteRouteModule.handleResponse (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:1:227216)
+    at async handleResponse (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18352:32)
+    at async Module.handler (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18406:13)
+    at async DevServer.renderToResponseWithComponentsImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1454:9)
+    at async DevServer.renderPageComponent (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1506:24)
+    at async DevServer.renderToResponseImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1556:32)
+    at async DevServer.pipeImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1043:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\next-server.js:338:17)
+    at async DevServer.handleRequestImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:934:17)
+    at async D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\dev\next-dev-server.js:394:20
+    at async Span.traceAsyncFn (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\trace\trace.js:164:20)
+    at async DevServer.handleRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\dev\next-dev-server.js:390:24)
+    at async invokeRender (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:253:21)
+    at async handleRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:452:24)
+    at async requestHandlerImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:501:13)
+    at async Server.requestListener (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\start-server.js:225:13)
+[31m[auth][details][0m: {
+  "provider": "credentials"
+}
+ POST /api/auth/callback/credentials? 200 in 11ms (next.js: 1840µs, application-code: 9ms)
+ GET /api/auth/session 200 in 8ms (next.js: 2ms, application-code: 6ms)
+ GET /api/auth/providers 200 in 13ms (next.js: 9ms, application-code: 5ms)
+ GET /api/auth/csrf 200 in 6ms (next.js: 1882µs, application-code: 4ms)
+prisma:error 
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Error querying the database: Error code 14: Unable to open the database file
+[31m[auth][error][0m CallbackRouteError: Read more at https://errors.authjs.dev#callbackrouteerror
+[31m[auth][cause][0m: PrismaClientInitializationError: 
+Invalid `prisma.user.findUnique()` invocation:
+
+
+Error querying the database: Error code 14: Unable to open the database file
+    at ei.handleRequestError (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7351:39)
+    at ei.handleAndLogRequestError (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7302:18)
+    at ei.request (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7283:18)
+    at async a (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:7950:25)
+    at async Object.authorize (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\[root-of-the-server]__069xaqb._.js:8406:30)
+    at async Module.callback (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:4307:39)
+    at async AuthInternal (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:5148:24)
+    at async Auth (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0i2c_@auth_core_0mst.43._.js:5370:34)
+    at async AppRouteRouteModule.do (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:5:40732)
+    at async AppRouteRouteModule.handle (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:5:47861)
+    at async responseGenerator (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18289:38)
+    at async AppRouteRouteModule.handleResponse (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:1:227216)
+    at async handleResponse (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18352:32)
+    at async Module.handler (D:\MyProjects\WebPortfolio\apps\flowo-crm\.next\dev\server\chunks\0m~-_next_0yl.qqx._.js:18406:13)
+    at async DevServer.renderToResponseWithComponentsImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1454:9)
+    at async DevServer.renderPageComponent (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1506:24)
+    at async DevServer.renderToResponseImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1556:32)
+    at async DevServer.pipeImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:1043:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\next-server.js:338:17)
+    at async DevServer.handleRequestImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\base-server.js:934:17)
+    at async D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\dev\next-dev-server.js:394:20
+    at async Span.traceAsyncFn (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\trace\trace.js:164:20)
+    at async DevServer.handleRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\dev\next-dev-server.js:390:24)
+    at async invokeRender (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:253:21)
+    at async handleRequest (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:452:24)
+    at async requestHandlerImpl (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\router-server.js:501:13)
+    at async Server.requestListener (D:\MyProjects\WebPortfolio\node_modules\.pnpm\next@16.2.1_react-dom@19.2.4_react@19.2.4__react@19.2.4\node_modules\next\dist\server\lib\start-server.js:225:13)
+[31m[auth][details][0m: {
+  "provider": "credentials"
+}
+ POST /api/auth/callback/credentials? 200 in 10ms (next.js: 1830µs, application-code: 8ms)
+ GET /api/auth/session 200 in 6ms (next.js: 1796µs, application-code: 4ms)
+^CD:\MyProjects\WebPortfolio\apps\flowo-crm:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  flowo-crm@0.1.0 dev: `next dev --turbopack --port 3002`
+Exit status 3221225786

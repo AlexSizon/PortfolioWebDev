@@ -1,0 +1,75 @@
+---
+interface Props {
+  title: string;
+  category: string;
+  city: string;
+  year: string;
+  description: string;
+  imageUrl: string;
+  index: number;
+}
+
+const { title, category, city, year, description, imageUrl, index } = Astro.props;
+---
+
+<section
+  class="slide project-slide group relative isolate overflow-hidden bg-nord-noir text-nord-linen"
+  aria-label={title}
+  data-slide-kind="project"
+  data-nav-theme="framed-light"
+  data-project-title={title}
+  data-cursor="accent"
+>
+  <img
+    src={imageUrl}
+    alt={`${title} - ${category} project in ${city}`}
+    loading={index === 1 ? "eager" : "lazy"}
+    decoding="async"
+    width="1600"
+    height="1200"
+    class="project-slide__image absolute inset-0 h-full w-full object-cover"
+  />
+
+  <div
+    class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/40 via-black/14 to-transparent"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute inset-x-0 bottom-0 h-[45vh] bg-gradient-to-t from-black/82 via-black/42 to-transparent"
+    aria-hidden="true"
+  ></div>
+
+  <div class="relative z-10 flex h-full items-end">
+    <div
+      class="mx-auto w-full max-w-[112rem] px-6 pb-[calc(1.4rem+env(safe-area-inset-bottom))] md:px-8 md:pb-8 lg:px-12"
+    >
+      <div
+        class="project-caption-card rounded-[1.75rem] border border-white/12 bg-black/18 shadow-[0_30px_80px_rgba(0,0,0,0.32)] backdrop-blur-sm"
+        data-project-caption
+      >
+        <div class="project-caption-layout" data-project-caption-layout>
+          <div class="project-caption-heading">
+            <h2
+              class="project-caption-title font-display text-3xl font-light leading-[0.92] text-white md:text-5xl xl:text-[4.25rem]"
+            >
+              {title}
+            </h2>
+          </div>
+
+          <div class="project-caption-copy">
+            <p
+              class="project-caption-meta text-[0.62rem] uppercase tracking-[0.42em] text-white/65"
+            >
+              {category} &middot; {city} &middot; {year}
+            </p>
+            <p
+              class="project-caption-description text-sm leading-relaxed text-white/72 md:text-[0.98rem]"
+            >
+              {description}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Maison Nord social preview">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0F0F0F" />
+      <stop offset="100%" stop-color="#2A2520" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="84" y="84" width="1032" height="462" rx="24" fill="none" stroke="#C9A96E" stroke-opacity="0.45" />
+  <text x="120" y="248" fill="#F5F0E8" font-family="Georgia, serif" font-size="92" letter-spacing="24">MAISON NORD</text>
+  <text x="124" y="314" fill="#C9A96E" font-family="Arial, sans-serif" font-size="24" letter-spacing="12">INTERIOR DESIGN STUDIO</text>
+  <text x="124" y="414" fill="#F5F0E8" font-family="Arial, sans-serif" font-size="36" opacity="0.8">Scandinavian luxury interiors with editorial restraint.</text>
+</svg>

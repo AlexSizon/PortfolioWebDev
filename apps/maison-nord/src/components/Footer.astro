@@ -1,0 +1,41 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-nord-noir py-12 px-6 border-t border-nord-sand/10">
+  <div
+    class="section-shell flex flex-col md:flex-row items-center justify-between gap-6"
+  >
+    <!-- Wordmark -->
+    <p
+      class="font-display text-xl tracking-[0.25em] font-light text-nord-linen/60"
+    >
+      MAISON NORD
+    </p>
+
+    <!-- Copyright -->
+    <p class="text-xs tracking-widest text-nord-linen/25 order-last md:order-none">
+      &copy; {year} Maison Nord Interior Design. All rights reserved.
+    </p>
+
+    <!-- Social links -->
+    <div class="flex items-center gap-6">
+      {
+        [
+          ["https://instagram.com", "INSTAGRAM"],
+          ["https://linkedin.com", "LINKEDIN"],
+          ["https://pinterest.com", "PINTEREST"],
+        ].map(([href, label]) => (
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-xs tracking-widest text-nord-linen/35 hover:text-nord-gold transition-colors duration-300"
+          >
+            {label}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,26 @@
+▲ Next.js 16.2.1 (Turbopack)
+- Local:         http://localhost:3003
+- Network:       http://26.189.16.216:3003
+✓ Ready in 466ms
+Creating turbopack project {
+  dir: 'D:\\MyProjects\\WebPortfolio\\apps\\lumina-ai',
+  testMode: true
+}
+
+ GET / 200 in 1297ms (next.js: 1129ms, application-code: 169ms)
+ GET / 200 in 40ms (next.js: 2ms, application-code: 38ms)
+ GET / 200 in 72ms (next.js: 4ms, application-code: 68ms)
+ GET / 200 in 65ms (next.js: 3ms, application-code: 62ms)
+ GET / 200 in 61ms (next.js: 3ms, application-code: 57ms)
+ GET / 200 in 79ms (next.js: 3ms, application-code: 76ms)
+ GET / 200 in 73ms (next.js: 3ms, application-code: 70ms)
+ GET / 200 in 78ms (next.js: 1441µs, application-code: 77ms)
+ GET / 200 in 71ms (next.js: 3ms, application-code: 68ms)
+ GET / 200 in 76ms (next.js: 3ms, application-code: 74ms)
+ GET / 200 in 72ms (next.js: 3ms, application-code: 69ms)
+ GET / 200 in 67ms (next.js: 2ms, application-code: 64ms)
+ GET / 200 in 80ms (next.js: 2ms, application-code: 77ms)
+ GET / 200 in 76ms (next.js: 3ms, application-code: 73ms)
+ GET / 200 in 153ms (next.js: 9ms, application-code: 144ms)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (<anonymous>)
+^C

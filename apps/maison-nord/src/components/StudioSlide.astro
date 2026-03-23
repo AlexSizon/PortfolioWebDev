@@ -1,0 +1,347 @@
+---
+---
+
+<section
+  class="slide studio-slide overflow-hidden bg-nord-noir text-nord-linen"
+  aria-label="Studio"
+  data-slide-kind="studio"
+  data-slide-label="Studio"
+  data-nav-theme="light"
+>
+  <div class="studio-scroll js-allow-scroll h-full overflow-y-auto">
+    <div
+      class="studio-stage-shell"
+      data-studio-stage-shell
+    >
+      <div
+        class="studio-stage"
+        data-studio-stage
+      >
+        <div class="studio-stage-header" data-studio-stage-header>
+          <p class="mb-5 text-[0.6rem] uppercase tracking-[0.5em] text-nord-gold">
+            Final Slide
+          </p>
+          <h2
+            class="mb-4 font-display text-5xl font-light italic leading-none text-nord-linen md:text-7xl xl:text-[5.5rem]"
+          >
+            Maison Nord
+          </h2>
+          <p
+            class="max-w-[40rem] font-display text-lg font-light italic text-nord-linen/38 md:text-[1.45rem]"
+          >
+            Interior design studio for homes, hospitality, and quietly ambitious
+            commercial interiors.
+          </p>
+        </div>
+
+        <div class="studio-stage-divider" aria-hidden="true"></div>
+
+        <div
+          class="studio-stage-grid"
+          data-studio-stage-grid
+        >
+          <div class="studio-stage-column studio-stage-column--about lg:pr-4">
+            <p class="mb-6 text-[0.6rem] uppercase tracking-[0.45em] text-nord-gold">
+              About
+            </p>
+            <p class="mb-8 max-w-[34ch] text-sm leading-relaxed text-nord-linen/58 md:text-[0.97rem]">
+              Founded in 2016 in Oslo, Maison Nord shapes interiors that feel
+              quietly inevitable: restrained in palette, precise in proportion, and
+              deeply responsive to natural light.
+            </p>
+
+            <div class="grid grid-cols-3 gap-4 border-t border-nord-sand/12 pt-6">
+              {[
+                ["2016", "Founded"],
+                ["48+", "Projects"],
+                ["3", "Countries"],
+              ].map(([value, label]) => (
+                <div>
+                  <p class="font-display text-2xl font-light text-nord-linen md:text-[1.85rem]">
+                    {value}
+                  </p>
+                  <p class="mt-1 text-[0.58rem] uppercase tracking-[0.28em] text-nord-linen/35">
+                    {label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div class="studio-stage-column studio-stage-column--services lg:px-8">
+            <p class="mb-6 text-[0.6rem] uppercase tracking-[0.45em] text-nord-gold">
+              Services
+            </p>
+            <ul class="space-y-3">
+              {[
+                "Interior Design",
+                "Spatial Planning",
+                "Furniture Curation",
+                "Lighting Direction",
+                "Project Oversight",
+              ].map((name) => (
+                <li
+                  class="border-b border-nord-sand/10 pb-3 font-display text-[1.35rem] font-light text-nord-linen/78 md:text-[1.55rem]"
+                >
+                  {name}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="studio-stage-column studio-stage-column--contact lg:pl-2">
+            <p class="mb-6 text-[0.6rem] uppercase tracking-[0.45em] text-nord-gold">
+              Contact
+            </p>
+
+            <div class="mb-8 space-y-4 text-[0.86rem] leading-relaxed text-nord-linen/54">
+              <p>
+                Bygdoy Alle 32, 2nd Floor
+                <br />
+                0265 Oslo, Norway
+              </p>
+              <a
+                href="mailto:hello@maisonnord.no"
+                class="block transition-colors duration-300 hover:text-nord-gold"
+                data-cursor="accent"
+              >
+                hello@maisonnord.no
+              </a>
+              <a
+                href="tel:+4722334455"
+                class="block transition-colors duration-300 hover:text-nord-gold"
+                data-cursor="accent"
+              >
+                +47 22 33 44 55
+              </a>
+            </div>
+
+            <form id="contact-form" novalidate class="space-y-5">
+              <div>
+                <label
+                  for="cf-name"
+                  class="mb-1.5 block text-[0.58rem] uppercase tracking-[0.35em] text-nord-linen/35"
+                >
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  id="cf-name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                  placeholder="Ingrid Andersson"
+                  class="w-full border-b border-nord-sand/20 bg-transparent py-2.5 text-sm text-nord-linen placeholder-nord-linen/16 outline-none transition-colors duration-300 focus:border-nord-gold"
+                />
+                <span class="field-error mt-1 hidden text-xs text-red-300"></span>
+              </div>
+
+              <div>
+                <label
+                  for="cf-email"
+                  class="mb-1.5 block text-[0.58rem] uppercase tracking-[0.35em] text-nord-linen/35"
+                >
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  id="cf-email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  placeholder="hello@yourname.no"
+                  class="w-full border-b border-nord-sand/20 bg-transparent py-2.5 text-sm text-nord-linen placeholder-nord-linen/16 outline-none transition-colors duration-300 focus:border-nord-gold"
+                />
+                <span class="field-error mt-1 hidden text-xs text-red-300"></span>
+              </div>
+
+              <div>
+                <label
+                  for="cf-message"
+                  class="mb-1.5 block text-[0.58rem] uppercase tracking-[0.35em] text-nord-linen/35"
+                >
+                  Project Brief
+                </label>
+                <textarea
+                  id="cf-message"
+                  name="message"
+                  required
+                  rows="4"
+                  placeholder="Tell us about the space, timeline, and mood you want to create."
+                  class="min-h-[6rem] w-full resize-none border-b border-nord-sand/20 bg-transparent py-2.5 text-sm text-nord-linen placeholder-nord-linen/16 outline-none transition-colors duration-300 focus:border-nord-gold"
+                ></textarea>
+                <span class="field-error mt-1 hidden text-xs text-red-300"></span>
+              </div>
+
+              <button
+                type="submit"
+                id="cf-submit"
+                class="group inline-flex items-center gap-3 rounded-full border border-nord-linen/15 px-6 py-3 text-[0.62rem] uppercase tracking-[0.34em] text-nord-linen/72 transition-all duration-300 hover:border-nord-gold hover:text-nord-gold disabled:opacity-40"
+                data-cursor="accent"
+              >
+                <span id="cf-label">Send Message</span>
+                <svg
+                  class="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 8h10M8 3l5 5-5 5"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+
+              <p
+                id="cf-success"
+                class="hidden text-[0.62rem] uppercase tracking-[0.24em] text-nord-gold"
+                role="status"
+                aria-live="polite"
+              >
+                Message sent. We will be in touch within 1-2 business days.
+              </p>
+              <p
+                id="cf-error"
+                class="hidden text-[0.62rem] uppercase tracking-[0.2em] text-red-300"
+                role="alert"
+              ></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import emailjs from "@emailjs/browser";
+
+  const serviceId = import.meta.env.PUBLIC_EMAILJS_SERVICE_ID as string;
+  const templateId = import.meta.env.PUBLIC_EMAILJS_TEMPLATE_ID as string;
+  const publicKey = import.meta.env.PUBLIC_EMAILJS_PUBLIC_KEY as string;
+
+  const form = document.getElementById("contact-form") as HTMLFormElement | null;
+  const submitBtn = document.getElementById("cf-submit") as HTMLButtonElement | null;
+  const submitLabel = document.getElementById("cf-label");
+  const successMsg = document.getElementById("cf-success");
+  const errorMsg = document.getElementById("cf-error");
+
+  function setFieldError(
+    input: HTMLInputElement | HTMLTextAreaElement,
+    message: string
+  ) {
+    const err = input.parentElement?.querySelector(".field-error");
+    if (err) {
+      err.textContent = message;
+      err.classList.remove("hidden");
+      input.style.borderBottomColor = "rgba(252,165,165,0.9)";
+    }
+  }
+
+  function clearFieldError(input: HTMLInputElement | HTMLTextAreaElement) {
+    const err = input.parentElement?.querySelector(".field-error");
+    if (err) {
+      err.textContent = "";
+      err.classList.add("hidden");
+      input.style.borderBottomColor = "";
+    }
+  }
+
+  function hideFeedback() {
+    successMsg?.classList.add("hidden");
+    if (errorMsg) {
+      errorMsg.textContent = "";
+      errorMsg.classList.add("hidden");
+    }
+  }
+
+  function showError(message: string) {
+    if (!errorMsg) {
+      return;
+    }
+
+    errorMsg.textContent = message;
+    errorMsg.classList.remove("hidden");
+  }
+
+  function validate(f: HTMLFormElement): boolean {
+    const name = f.elements.namedItem("name") as HTMLInputElement;
+    const email = f.elements.namedItem("email") as HTMLInputElement;
+    const message = f.elements.namedItem("message") as HTMLTextAreaElement;
+
+    [name, email, message].forEach(clearFieldError);
+
+    let ok = true;
+
+    if (!name.value.trim()) {
+      setFieldError(name, "Please enter your name.");
+      ok = false;
+    }
+
+    if (!email.value.trim()) {
+      setFieldError(email, "Please enter your email address.");
+      ok = false;
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+      setFieldError(email, "Please enter a valid email address.");
+      ok = false;
+    }
+
+    if (!message.value.trim()) {
+      setFieldError(message, "Please enter your project brief.");
+      ok = false;
+    }
+
+    return ok;
+  }
+
+  form
+    ?.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>("input, textarea")
+    .forEach((field) => {
+      field.addEventListener("input", () => {
+        clearFieldError(field);
+        hideFeedback();
+      });
+    });
+
+  form?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    hideFeedback();
+
+    if (!form || !submitBtn || !submitLabel) {
+      return;
+    }
+
+    if (!validate(form)) {
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitLabel.textContent = "Sending...";
+
+    if (!serviceId || !templateId || !publicKey) {
+      showError(
+        "Email is temporarily unavailable. Please email hello@maisonnord.no directly."
+      );
+      submitBtn.disabled = false;
+      submitLabel.textContent = "Send Message";
+      return;
+    }
+
+    try {
+      await emailjs.sendForm(serviceId, templateId, form, { publicKey });
+      successMsg?.classList.remove("hidden");
+      form.reset();
+    } catch {
+      showError(
+        "Something went wrong. Please try again or email hello@maisonnord.no directly."
+      );
+    } finally {
+      submitBtn.disabled = false;
+      submitLabel.textContent = "Send Message";
+    }
+  });
+</script>

@@ -1,0 +1,28 @@
+▲ Next.js 16.2.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://26.189.16.216:3000
+- Environments: .env.local, .env
+✓ Ready in 475ms
+Creating turbopack project {
+  dir: 'D:\\MyProjects\\WebPortfolio\\apps\\okami-ramen',
+  testMode: true
+}
+
+ GET / 307 in 551ms (next.js: 197ms, application-code: 354ms)
+ GET /menu 200 in 155ms (next.js: 24ms, application-code: 131ms)
+prisma:query SELECT `main`.`Category`.`id`, `main`.`Category`.`name`, `main`.`Category`.`order`, `main`.`Category`.`createdAt`, `main`.`Category`.`updatedAt` FROM `main`.`Category` WHERE 1=1 ORDER BY `main`.`Category`.`order` ASC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`MenuItem`.`id`, `main`.`MenuItem`.`name`, `main`.`MenuItem`.`description`, `main`.`MenuItem`.`ingredients`, `main`.`MenuItem`.`price`, `main`.`MenuItem`.`imageUrl`, `main`.`MenuItem`.`available`, `main`.`MenuItem`.`categoryId`, `main`.`MenuItem`.`createdAt`, `main`.`MenuItem`.`updatedAt` FROM `main`.`MenuItem` WHERE `main`.`MenuItem`.`categoryId` IN (?,?,?,?) ORDER BY `main`.`MenuItem`.`name` ASC LIMIT ? OFFSET ?
+ GET /api/menu 200 in 168ms (next.js: 143ms, application-code: 25ms)
+✓ Compiled in 60ms
+ GET /api/menu/events 200 in 2.9min (next.js: 57ms, application-code: 2.9min)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Category`.`id`, `main`.`Category`.`name`, `main`.`Category`.`order`, `main`.`Category`.`createdAt`, `main`.`Category`.`updatedAt` FROM `main`.`Category` WHERE 1=1 ORDER BY `main`.`Category`.`order` ASC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`MenuItem`.`id`, `main`.`MenuItem`.`name`, `main`.`MenuItem`.`description`, `main`.`MenuItem`.`ingredients`, `main`.`MenuItem`.`price`, `main`.`MenuItem`.`imageUrl`, `main`.`MenuItem`.`available`, `main`.`MenuItem`.`categoryId`, `main`.`MenuItem`.`createdAt`, `main`.`MenuItem`.`updatedAt` FROM `main`.`MenuItem` WHERE `main`.`MenuItem`.`categoryId` IN (?,?,?,?) ORDER BY `main`.`MenuItem`.`name` ASC LIMIT ? OFFSET ?
+ GET /api/menu 200 in 25ms (next.js: 8ms, application-code: 18ms)
+ GET /api/menu/events 200 in 5.6min (next.js: 4ms, application-code: 5.6min)
+ GET /menu 200 in 211ms (next.js: 64ms, application-code: 147ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Category`.`id`, `main`.`Category`.`name`, `main`.`Category`.`order`, `main`.`Category`.`createdAt`, `main`.`Category`.`updatedAt` FROM `main`.`Category` WHERE 1=1 ORDER BY `main`.`Category`.`order` ASC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`MenuItem`.`id`, `main`.`MenuItem`.`name`, `main`.`MenuItem`.`description`, `main`.`MenuItem`.`ingredients`, `main`.`MenuItem`.`price`, `main`.`MenuItem`.`imageUrl`, `main`.`MenuItem`.`available`, `main`.`MenuItem`.`categoryId`, `main`.`MenuItem`.`createdAt`, `main`.`MenuItem`.`updatedAt` FROM `main`.`MenuItem` WHERE `main`.`MenuItem`.`categoryId` IN (?,?,?,?) ORDER BY `main`.`MenuItem`.`name` ASC LIMIT ? OFFSET ?
+ GET /api/menu 200 in 15ms (next.js: 3ms, application-code: 12ms)
+ GET /api/menu/events 200 in 79s (next.js: 8ms, application-code: 79s)

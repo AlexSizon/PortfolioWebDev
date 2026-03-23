@@ -1,0 +1,96 @@
+---
+import Layout from "../layouts/Layout.astro";
+import CustomCursor from "../components/CustomCursor.astro";
+import GalleryNavigator from "../components/GalleryNavigator.astro";
+import IntroSlide from "../components/IntroSlide.astro";
+import ProjectSlide from "../components/ProjectSlide.astro";
+import StudioSlide from "../components/StudioSlide.astro";
+
+const projects = [
+  {
+    title: "Villa Blanc",
+    category: "Residential",
+    city: "Oslo, Norway",
+    year: "2024",
+    description:
+      "A light-filled Oslo villa designed around a central atrium. Every material chosen for its long-term relationship with Nordic daylight.",
+    imageUrl: "/images/projects/villa-blanc.webp",
+  },
+  {
+    title: "Atelier Oslo",
+    category: "Commercial",
+    city: "Oslo, Norway",
+    year: "2023",
+    description:
+      "Creative workspace for a contemporary art studio. Raw concrete, aged brass, and hand-selected textiles define a space built for focused making.",
+    imageUrl: "/images/projects/atelier-oslo.webp",
+  },
+  {
+    title: "La Maison Grise",
+    category: "Residential",
+    city: "Viken, Norway",
+    year: "2023",
+    description:
+      "A grey stone residence in the Viken hills. The palette draws from the surrounding birch forest: stone, moss, and muted timber.",
+    imageUrl: "/images/projects/maison-grise.webp",
+  },
+  {
+    title: "Penthouse Lumiere",
+    category: "Residential",
+    city: "Aker Brygge, Oslo",
+    year: "2022",
+    description:
+      "A rooftop apartment above Aker Brygge. The brief: make the Oslo Fjord the dominant element in every room.",
+    imageUrl: "/images/projects/penthouse-lumiere.webp",
+  },
+  {
+    title: "Spa Nordique",
+    category: "Hospitality",
+    city: "Geilo, Norway",
+    year: "2022",
+    description:
+      "A private spa retreat integrating traditional Nordic bathing rituals with contemporary minimalist architecture.",
+    imageUrl: "/images/projects/spa-nordique.webp",
+  },
+  {
+    title: "Studio Kvist",
+    category: "Commercial",
+    city: "Majorstuen, Oslo",
+    year: "2021",
+    description:
+      "Boutique design consultancy in Majorstuen. A compact 90 m2 studio where client meetings, material samples, and focused work coexist.",
+    imageUrl: "/images/projects/studio-kvist.webp",
+  },
+];
+
+---
+
+<Layout>
+  <CustomCursor />
+  <GalleryNavigator />
+
+  <main class="h-full">
+    <div
+      id="slide-track"
+      class="slide-track"
+      data-slide-track
+      aria-label="Fullscreen gallery"
+    >
+      <IntroSlide />
+      {projects.map((project, i) => (
+        <ProjectSlide
+          title={project.title}
+          category={project.category}
+          city={project.city}
+          year={project.year}
+          description={project.description}
+          imageUrl={project.imageUrl}
+          index={i + 1}
+        />
+      ))}
+      <StudioSlide />
+    </div>
+  </main>
+
+  <script src="../scripts/slideNavigator.ts"></script>
+</Layout>

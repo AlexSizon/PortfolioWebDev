@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  /* Flowo CRM brand colors */
+  --color-flowo-void: #0d0d14;
+  --color-flowo-void-2: #13131f;
+  --color-flowo-void-3: #1a1a2e;
+  --color-flowo-violet: #7c3aed;
+  --color-flowo-violet-light: #8b5cf6;
+  --color-flowo-cyan: #06b6d4;
+  --color-flowo-pink: #f472b6;
+
+  /* Typography */
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Glassmorphism card utility */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 58, 237, 0.4);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(124, 58, 237, 0.7);
+}
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}

@@ -1,0 +1,16 @@
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[browser] Image with src "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=80" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+⨯ upstream image response failed for https://images.unsplash.com/photo-1571197119579-90a1e2bf28ab?w=600&q=80 404
+[browser] Image with src "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600&q=80" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[browser] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[browser] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[browser] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[browser] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[browser] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+⨯ upstream image response failed for https://images.unsplash.com/photo-1609591880943-f7c2b7b6f3a1?w=600&q=80 404
+⨯ upstream image response failed for https://images.unsplash.com/photo-1609591880943-f7c2b7b6f3a1?w=600&q=80 404
+⨯ upstream image response failed for https://images.unsplash.com/photo-1571197119579-90a1e2bf28ab?w=600&q=80 404
+^C

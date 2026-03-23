@@ -1,0 +1,19 @@
+
+> @repo/maison-nord@0.1.0 dev D:\MyProjects\WebPortfolio\apps\maison-nord
+> astro dev "--" "--port" "3001"
+
+09:48:57 [types] Generated 1ms
+
+ astro  v4.16.19 ready in 184 ms
+
+┃ Local    http://localhost:4321/
+┃ Network  use --host to expose
+
+09:48:57 watching for file changes...
+09:57:08 [200] / 9ms
+09:58:15 [200] / 2ms
+09:58:32 [200] / 2ms
+10:00:58 [200] / 4ms
+^CD:\MyProjects\WebPortfolio\apps\maison-nord:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @repo/maison-nord@0.1.0 dev: `astro dev "--" "--port" "3001"`
+Exit status 3221225786

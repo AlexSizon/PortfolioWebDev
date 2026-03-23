@@ -1,0 +1,13 @@
+▲ Next.js 16.2.1 (Turbopack)
+- Local:         http://localhost:3010
+- Network:       http://26.189.16.216:3010
+✓ Ready in 312ms
+Creating turbopack project {
+  dir: 'D:\\MyProjects\\WebPortfolio\\apps\\portfolio',
+  testMode: true
+}
+
+ GET / 200 in 255ms (next.js: 106ms, application-code: 149ms)
+ GET / 200 in 31ms (next.js: 2ms, application-code: 29ms)
+ GET / 200 in 65ms (next.js: 3ms, application-code: 62ms)
+^C

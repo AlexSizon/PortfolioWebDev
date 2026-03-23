@@ -1,0 +1,137 @@
+---
+---
+
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+  <div class="section-shell px-6 py-5 flex items-center justify-between">
+    <!-- Wordmark -->
+    <a
+      href="/"
+      class="font-display text-xl tracking-[0.3em] font-light text-nord-linen hover:text-nord-gold transition-colors duration-300"
+    >
+      MAISON NORD
+    </a>
+
+    <!-- Desktop nav -->
+    <ul class="hidden md:flex items-center gap-10">
+      {
+        [
+          ["#about", "ABOUT"],
+          ["#services", "SERVICES"],
+          ["#work", "WORK"],
+          ["#contact", "CONTACT"],
+        ].map(([href, label]) => (
+          <li>
+            <a
+              href={href}
+              class="text-xs tracking-widest text-nord-linen/70 hover:text-nord-gold transition-colors duration-300"
+            >
+              {label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <!-- Mobile hamburger -->
+    <button
+      id="menu-toggle"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false"
+      class="md:hidden flex flex-col justify-center gap-[5px] p-2 -mr-2"
+    >
+      <span
+        id="ham-top"
+        class="block w-6 h-px bg-nord-linen transition-all duration-300"></span>
+      <span
+        id="ham-mid"
+        class="block w-6 h-px bg-nord-linen transition-all duration-300"></span>
+      <span
+        id="ham-bot"
+        class="block w-4 h-px bg-nord-linen transition-all duration-300 self-end"
+      ></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div
+    id="mobile-menu"
+    class="md:hidden hidden backdrop-blur-md"
+    style="background-color: rgba(15,15,15,0.96)"
+  >
+    <ul class="flex flex-col items-center gap-8 py-12">
+      {
+        [
+          ["#about", "ABOUT"],
+          ["#services", "SERVICES"],
+          ["#work", "WORK"],
+          ["#contact", "CONTACT"],
+        ].map(([href, label]) => (
+          <li>
+            <a
+              href={href}
+              class="text-xs tracking-[0.35em] text-nord-linen/70 hover:text-nord-gold transition-colors duration-300"
+            >
+              {label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</nav>
+
+<script>
+  const navbar = document.getElementById("navbar")!;
+  const toggle = document.getElementById("menu-toggle")!;
+  const mobileMenu = document.getElementById("mobile-menu")!;
+  const hamTop = document.getElementById("ham-top")!;
+  const hamMid = document.getElementById("ham-mid")!;
+  const hamBot = document.getElementById("ham-bot")!;
+
+  // Scroll: transparent → opaque
+  function updateNavbar() {
+    if (window.scrollY > 80) {
+      navbar.style.backgroundColor = "rgba(15,15,15,0.92)";
+      navbar.style.backdropFilter = "blur(12px)";
+      navbar.style.boxShadow = "0 1px 0 rgba(201,169,110,0.08)";
+    } else {
+      navbar.style.backgroundColor = "";
+      navbar.style.backdropFilter = "";
+      navbar.style.boxShadow = "";
+    }
+  }
+  window.addEventListener("scroll", updateNavbar, { passive: true });
+  updateNavbar();
+
+  // Mobile menu toggle
+  let isOpen = false;
+
+  function closeMenu() {
+    isOpen = false;
+    mobileMenu.classList.add("hidden");
+    toggle.setAttribute("aria-expanded", "false");
+    hamTop.style.transform = "";
+    hamMid.style.opacity = "1";
+    hamBot.style.width = "1rem";
+    hamBot.style.transform = "";
+  }
+
+  toggle.addEventListener("click", () => {
+    isOpen = !isOpen;
+    toggle.setAttribute("aria-expanded", String(isOpen));
+    if (isOpen) {
+      mobileMenu.classList.remove("hidden");
+      // Animate to X
+      hamTop.style.transform = "translateY(6px) rotate(45deg)";
+      hamMid.style.opacity = "0";
+      hamBot.style.width = "1.5rem";
+      hamBot.style.transform = "translateY(-6px) rotate(-45deg)";
+    } else {
+      closeMenu();
+    }
+  });
+
+  mobileMenu.querySelectorAll("a").forEach((a) => {
+    a.addEventListener("click", closeMenu);
+  });
+</script>

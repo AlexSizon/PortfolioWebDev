@@ -1,0 +1,10 @@
+
+> @repo/maison-nord@0.1.0 preview
+> astro preview --host 127.0.0.1 --port 4322
+
+
+ astro  v4.16.19 ready in 7 ms
+
+┃ Local    http://127.0.0.1:4322/
+
+^C^C
