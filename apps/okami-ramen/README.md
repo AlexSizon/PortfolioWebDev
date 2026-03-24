@@ -20,15 +20,19 @@ pnpm --filter @repo/okami-ramen dev
 
 ```bash
 DATABASE_URL="file:./dev.db"
+AUTH_SECRET="replace-me"
 NEXTAUTH_SECRET="replace-me"
 NEXTAUTH_URL="http://localhost:3000"
 ```
 
-For Railway, use a persistent volume and point the database at:
+For Railway, add these service variables and use a persistent volume:
 
 ```bash
 DATABASE_URL="file:/data/okami.db"
+AUTH_SECRET="generate-a-long-random-string"
 ```
+
+`NEXTAUTH_SECRET` is also supported as a fallback, but `AUTH_SECRET` is the preferred Auth.js v5 name.
 
 ## Deployment Notes
 
