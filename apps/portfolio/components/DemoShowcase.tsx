@@ -5,13 +5,13 @@ import DemoCard, { type DemoCardData } from "./DemoCard";
 
 const demoUrls = {
   maisonNord:
-    process.env.NEXT_PUBLIC_MAISON_NORD_URL ?? "http://localhost:4321",
+    process.env.NEXT_PUBLIC_MAISON_NORD_URL ?? "https://repomaison-nord-production.up.railway.app/",
   okamiRamen:
-    process.env.NEXT_PUBLIC_OKAMI_RAMEN_URL ?? "http://localhost:3000",
+    process.env.NEXT_PUBLIC_OKAMI_RAMEN_URL ?? "https://repookami-ramen-production.up.railway.app/menu",
   flowoCrm:
-    process.env.NEXT_PUBLIC_FLOWO_CRM_URL ?? "http://localhost:3002",
+    process.env.NEXT_PUBLIC_FLOWO_CRM_URL ?? "https://flowo-crm-production.up.railway.app/dashboard",
   luminaAi:
-    process.env.NEXT_PUBLIC_LUMINA_AI_URL ?? "http://localhost:3003",
+    process.env.NEXT_PUBLIC_LUMINA_AI_URL ?? "https://repolumina-ai-production.up.railway.app/",
 } as const;
 
 const demos: DemoCardData[] = [

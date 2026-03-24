@@ -5,7 +5,7 @@
     "buildCommand": "cd /app && pnpm --filter @repo/portfolio build"
   },
   "deploy": {
-    "startCommand": "node /app/apps/portfolio/.next/standalone/apps/portfolio/server.js",
+    "startCommand": "HOSTNAME=0.0.0.0 node /app/apps/portfolio/.next/standalone/apps/portfolio/server.js",
     "healthcheckPath": "/",
     "healthcheckTimeout": 60,
     "restartPolicyType": "ON_FAILURE",
