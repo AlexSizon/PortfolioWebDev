@@ -5,7 +5,7 @@
     "buildCommand": "cd /app && pnpm --filter @repo/okami-ramen build"
   },
   "deploy": {
-    "startCommand": "HOSTNAME=0.0.0.0 node /app/apps/okami-ramen/.next/standalone/apps/okami-ramen/server.js",
+    "startCommand": "node /app/apps/okami-ramen/scripts/start-production.mjs",
     "healthcheckPath": "/menu",
     "healthcheckTimeout": 60,
     "restartPolicyType": "ON_FAILURE",

@@ -59,7 +59,8 @@ export default function LoginPage() {
         {/* Demo credentials banner */}
         <div className="rounded-lg border border-[#ff4b00]/30 bg-[#ff4b00]/10 px-4 py-3 text-sm text-[#f5e6d3]/80">
           <p className="font-medium text-[#ff4b00]">Demo credentials</p>
-          <p className="mt-0.5">Demo credentials — click below to enter</p>
+          <p className="mt-0.5">Email: admin@okami.app</p>
+          <p>Password: demo123</p>
         </div>
 
         {/* Demo login button — prominent */}

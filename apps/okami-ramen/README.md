@@ -38,16 +38,17 @@ AUTH_SECRET="generate-a-long-random-string"
 
 - Railway build command: `pnpm build --filter=okami-ramen`
 - Railway persistent volume mount: `/data`
-- Railway start command: `HOSTNAME=0.0.0.0 node apps/okami-ramen/.next/standalone/apps/okami-ramen/server.js`
-- Force `HOSTNAME=0.0.0.0` for standalone mode so Next.js does not try to bind to the container hostname, which can cause Railway healthchecks to fail even after a successful build.
+- Railway start command: `node apps/okami-ramen/scripts/start-production.mjs`
+- Startup now runs `prisma migrate deploy` automatically, seeds the demo database on first boot, and then launches the standalone Next.js server on `0.0.0.0`.
 - The build step also copies `.next/static` into the standalone output so Railway can serve the generated CSS, JS, and font files.
+- Demo admin login: `admin@okami.app` / `demo123`
 
 ## Nightly Reset Cron
 
 Set a Railway cron job to run nightly at `03:00 UTC` with this command:
 
 ```bash
-npx tsx prisma/seed.ts
+node ./scripts/seed-database.mjs
 ```
 
 Recommended cron expression:
