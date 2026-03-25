@@ -73,7 +73,7 @@ export default function AboutSection() {
                 Hire Me
               </a>
               <a
-                href="https://github.com/alsy"
+                href="https://github.com/AlexSizon"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-zinc-700 text-zinc-300 text-sm font-medium hover:border-violet hover:text-white transition-colors"

@@ -19,7 +19,7 @@ type SubmitStatus = "idle" | "loading" | "success" | "error";
 const socialLinks = [
   {
     label: "GitHub",
-    href: "https://github.com/alsy",
+    href: "https://github.com/AlexSizon",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
